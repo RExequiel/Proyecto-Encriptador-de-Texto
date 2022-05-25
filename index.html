@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="encriptador-encriptar-cambiar texto-desencriptar-desencriptador-desencriptar texto-">
+        <title>Encriptador de texto</title>
+        <link rel="icon" href="img/icono.png">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <img id="logo" src="img/logo (2).png" alt="Logo">
+            <section class="texto-principal">
+                <p>Encriptador de texto</p>
+                <textarea placeholder="Ingrese su texto aquí" id="texto" name="texto" cols="7" rows="15" autofocus></textarea>
+                <span><ion-icon name="alert-circle"></ion-icon> Solo letras minúsculas y sin acentos</span>
+                <div>
+                    <button class="btn1">Encriptar</button>
+                    <button class="btn2">Desencriptar</button>
+                </div>
+            </section>
+            <section class="resultado">
+                <div id="cambiarTexto">
+                    <img src="img/muñeco (2).png" alt="img texto no encontrado">
+                    <p>Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <button onclick="copiarAlPortapapeles('cambiarTexto')" id="copy">Copiar</button>
+            </section>
+        </main>
+        <footer>
+            <p><ion-icon name="construct-sharp"></ion-icon> Sitio Web desarrollado por Exequiel Gerez</p>
+        </footer>
+        <script src="app.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
